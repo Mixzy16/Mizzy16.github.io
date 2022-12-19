@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Oxygen festival</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+		<script defer src="game.js" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+
+			<div class="header">
+				<h1>Oxygen Festival</h1>
+
+			</div>
+			<div class="topnav">
+			   <img src="images/logo.png" alt="logo"align = "centre" width="100" height="100">
+			  <!-- Navigation links (hidden by default) -->
+			  <div id="myLinks">
+			    <a href="index.html">Home</a>
+			    <a href="Drinks.html">Drinks menu</a>
+			    <a href="Book.html">Book now</a>
+			  </div>
+			  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			  <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+			</div>
+
+
+			<div class="main">
+
+      <h2>Here is a minigame</h2>
+			<div id="playGame">
+	      <h2>Pick a number between 1 and 10</h2>
+	      <h4>You have 3 tries</h4>
+	      <!-- this special input type will allow the user to use the spinner to choose the desired number -->
+	      <input id="userInput" type="number" name="" value="1" min="1" max="10">
+	      <button onclick="CheckNumber();" type="button" name="button">Guess</button>
+	      <br><br>
+	      <span>Number of tries: <span id="numberOfTries">0</span></span>
+	      <h3 id="messageToUser"></h3>
+
+
+	    </div>
+
+	    <!-- this will display when the user guesses the number OR after three tries -->
+	    <div id="restartGame">
+
+	      <h3 id="message"></h3>
+	      <!-- create two buttons that will allow the user to continue or stop playing the game-->
+	      <button onclick="StartGame();" type="button" name="button">Yes</button>
+	      <button onclick="GameOver();" type="button" name="button">No</button>
+	    </div>
+
+	    <!-- this will display only when the user chooses not to continue playing the game -->
+	    <div id="gameOver">
+	      <h3>Thanks for playing! See you again!</h3>
+	    </div>
+<img src ="images/oxygen.jpg" alt=""align =  width="300" height="150">
+
+			</div>
+
+			<br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="footer">
+				<footer>CONTACT: Oxygenfestival@gmail.com </footer>
+			</div>
+	</body>
+</html>

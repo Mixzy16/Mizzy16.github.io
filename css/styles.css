@@ -1,0 +1,157 @@
+p{color: orange; font-family: 'Lato', sans-serif;}  /* making text orange with font*/
+h1{color: orange; font-family: 'Lato', sans-serif;} /* making h1 headers orange with font*/
+h2{color: orange; font-family: 'Lato', sans-serif} /* making h2 headers orange with font*/
+Label{color: orange; font-family: 'Lato', sans-serif} /* making text inside labels orange with font*/
+h3{color: orange; font-family: 'Jost', sans-serif} /* making h3 headers orange with font*/
+h4{color: orange; font-family: 'Jost', sans-serif} /* making h4 headers orange with font*/
+span{color: orange; font-family: 'Jost', sans-serif} /* making text inside span orange with font*/
+
+img{float: inherit;}
+
+margin: 0 !important;
+padding: 0 !important; }
+
+#wrapper{
+	width: 90%;
+	margin: 0 auto;
+
+}
+
+.header{
+	border: 1px solid black;
+	background-color: black;
+	margin-top:  0px;
+
+}
+
+h1{
+	text-align:center;
+	color:  orange;
+
+}
+
+
+
+#playGame{width: 30%;
+float: left;
+height:300px;
+background-color: lightblue;}
+
+#restartGame{width: 30%;
+float: left;
+height:300px;
+background-color: lightblue;
+}
+
+#gameOver{width: 30%;
+float: left;
+height:300px;
+background-color: lightblue;}
+
+.Form{width: 30%;
+float: left;
+height:300px;
+background-color: black;}
+
+
+.main{
+	width: 100%;
+	float: right;
+	height: 500px;
+
+	background-image: url("../images/festival2.jpg");
+
+	/* Retrieves the image festival2.jpg from a folder called images.
+		 As this folder (images) is up one level in relation to the folder where our CSS file is located, we must use .. to exit the current folder (CSS) and then go to the next folder (images)
+	*/
+
+	background-repeat: no-repeat;
+	/* don't repeat the background image */
+
+	background-position: center;
+	/* display the image starting at the top-left corner of the screen */
+
+	background-size: cover;
+	/* fit the image to the size of the DIV */
+}
+
+
+@media screen and (max-width: 800px) {
+  .left, .header, #playGame, #restartGame,#gameOver,h2,h3,h4,p,h1,span { /* making .left, .header, #playGame, #restartGame,#gameOver,h2,h3,h4,p,h1 and span  responsive*/
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media screen and (max-width: 800px){ /* making images responsive*/
+	img{
+	width:30%; /* The width is 30%, when the viewport is 800px or smaller */
+	}
+}
+
+footer {
+	float: bottom;
+  text-align: center; /* position of text in the footer*/
+  background-color: black;/*color of the footer*/
+  color: orange; /*color of text in the footer*/
+	height: 50px;
+}
+
+
+body
+{
+  	background-image: url("../images/festival2.jpg");
+  background-size: cover;
+	/* Retrieves the image festival2.jpg from a folder called images.*/
+}
+h1{color: orange;}
+h2{color: orange; font-family: 'Jost', sans-serif;}
+.content{
+  background-color: blue;}
+
+p{color:orange; font-family: 'Lato', sans-serif;}
+
+.footer{
+text-align: center;
+border: 2px solid;
+background-color: blue;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
